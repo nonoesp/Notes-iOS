@@ -17,4 +17,9 @@ A personal guide with notes of Cocoa for iOS.
 * UIStatusBarAnimationNone
 
 
-***
+##NSTimer
+
+```objc
+NSTimer *timer = [NSTimer timerWithTimeInterval:6.0 target:self selector:@selector(updatePlaylist) userInfo:nil repeats:YES];
+[[NSRunLoop mainRunLoop] addTimer:timer forMode:NSDefaultRunLoopMode];
+```
