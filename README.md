@@ -29,14 +29,7 @@ NSTimer *timer = [NSTimer timerWithTimeInterval:(float) target:self selector:@se
 
 ##NSUserDefaults
 
-Class types of objects which can be stored in NSUserDefaults:
-
-* NSData
-* NSString
-* NSNumber
-* NSDate
-* NSArray
-* NSDictionary
+*A programmatic interface for interacting with the defaults system.* You can store default objects of the following classes: *NSData, NSString, NSNumber, NSDate, NSArray or NSDictionary.* Any other types should be wrapped within an NSData object.
 
 
 ```objc
@@ -48,7 +41,18 @@ NSUserDefaults *defaults = [NSUserDefaults standardUserDefaults];
 
 // Retrieve object with key
 [defaults objectForKey:@"PROPERTY_KEY"];
-
-// If the object is an NSString
-NSString *firstName = [defaults objectForKey:@"PROPERTY_KEY"];
 ```
+
+Example to store and retrieve an NSString
+```objc
+// Store a name and last name
+[defaults setObject:@"Steve" forKey:@"firstName"];
+[defaults setObject:@"Jobs" forKey:@"lastName"];
+
+// Retrieving defaults
+NSString *firstName = [defaults objectForKey:@"firstName"];
+NSString *lastName = [defaults objectForKey:@"lastName"];
+```
+
+
+
