@@ -4,7 +4,7 @@ iOS-Notes
 A personal guide with notes of Cocoa for iOS.
 
 
-##Status Bar
+## Status Bar
 
 ```objc
 // Show and hide
@@ -17,10 +17,10 @@ A personal guide with notes of Cocoa for iOS.
 * UIStatusBarAnimationNone
 
 
-##NSTimer
+## NSTimer
 
 ```objc
-NSTimer *timer = [NSTimer timerWithTimeInterval:6.0 target:self selector:@selector(someMethod) userInfo:nil repeats:YES];
+NSTimer *timer = [NSTimer timerWithTimeInterval:(float) target:self selector:@selector(someMethod) userInfo:nil repeats:(BOOL)];
 [[NSRunLoop mainRunLoop] addTimer:timer forMode:NSDefaultRunLoopMode];
 ```
 
