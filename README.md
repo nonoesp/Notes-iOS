@@ -20,6 +20,8 @@ A personal guide with notes of Cocoa for iOS.
 ##NSTimer
 
 ```objc
-NSTimer *timer = [NSTimer timerWithTimeInterval:6.0 target:self selector:@selector(updatePlaylist) userInfo:nil repeats:YES];
+NSTimer *timer = [NSTimer timerWithTimeInterval:6.0 target:self selector:@selector(someMethod) userInfo:nil repeats:YES];
 [[NSRunLoop mainRunLoop] addTimer:timer forMode:NSDefaultRunLoopMode];
 ```
+
+*If someMethod takes arguments the selector name would be @selector(someMethod:)*
