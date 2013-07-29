@@ -61,8 +61,10 @@ Access the shared Application Delegate instance.
 ```objc
 // Get shared instance of AppDelegate to access properties and methods
 AppDelegate *appDelegate = (AppDelegate*)[[UIApplication sharedApplication] delegate];
+
 // If AppDelegate implements the method someMethod
 [appDelegate someMethod];
+
 // If AppDelegate has a property call aString
 NSString *aString = [appDelegate aString];
 ```
