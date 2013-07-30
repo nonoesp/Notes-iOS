@@ -80,3 +80,6 @@ A list of useful shortcuts to navigate the user interface of Xcode faster.
 
 * `CTRL + L` Positions the line in edition on the middle of the screen.
 
+* `CMD + 0` Show/hide the File Inspector.
+
+
