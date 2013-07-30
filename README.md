@@ -74,6 +74,8 @@ NSString *aString = [appDelegate aString];
 
 A list of useful shortcuts to navigate the user interface of Xcode faster.
 
-* `FN + left-arrow / right-arrow`
+* `FN + left-arrow / right-arrow`  
 Scroll to the top or bottom of the file.
 
+* `FN + top-arrow / down-arrow`  
+Scroll up or down faster.
