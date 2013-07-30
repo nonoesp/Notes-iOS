@@ -26,6 +26,7 @@ NSTimer *timer = [NSTimer timerWithTimeInterval:(float) target:self selector:@se
 
 *If someMethod takes arguments the selector name would be @selector(someMethod:)*
 
+Some 
 
 ##NSUserDefaults
 
@@ -69,4 +70,10 @@ AppDelegate *appDelegate = (AppDelegate*)[[UIApplication sharedApplication] dele
 NSString *aString = [appDelegate aString];
 ```
 
+## Shortcuts
+
+A list of useful shortcuts to navigate the user interface of Xcode faster.
+
+* `FN + left-arrow / right-arrow`
+Scroll to the top or bottom of the file.
 
