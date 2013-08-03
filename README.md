@@ -1,7 +1,7 @@
 iOS-Notes
 =========
 
-A personal guide with notes of Cocoa for iOS.
+A personal guide with notes of Cocoa, iOs and Xcode.
 
 
 ## Status Bar
