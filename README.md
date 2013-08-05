@@ -3,6 +3,12 @@ iOS-Notes
 
 A personal guide with notes of Cocoa, iOs and Xcode.
 
+## Table of Contents
+
+* References
+* Guide
+* Xcode Shortcuts
+
 ## References
 
 * [NYTimes Objective-C Style Guide](https://github.com/NYTimes/objective-c-style-guide)
@@ -74,7 +80,19 @@ AppDelegate *appDelegate = (AppDelegate*)[[UIApplication sharedApplication] dele
 NSString *aString = [appDelegate aString];
 ```
 
-## Shortcuts
+## NSLog
+
+Logging on the console.
+
+```objc
+// NSLog an NSString
+NSLog(@"Hello World!");
+
+// NSLog a formatted NSString
+NSLog(@"My name is %@", @"Steve");
+```
+
+## Xcode Shortcuts
 
 A list of useful shortcuts to navigate the user interface of Xcode faster.
 
