@@ -14,7 +14,9 @@ A personal guide with notes of Cocoa, iOs and Xcode.
 * [NYTimes Objective-C Style Guide](https://github.com/NYTimes/objective-c-style-guide)
 
 
-## Status Bar
+## Guide
+
+### Status Bar
 
 ```objc
 // Show and hide
@@ -27,7 +29,7 @@ A personal guide with notes of Cocoa, iOs and Xcode.
 * UIStatusBarAnimationNone
 
 
-## NSTimer
+### NSTimer
 
 ```objc
 NSTimer *timer = [NSTimer timerWithTimeInterval:(float) target:self selector:@selector(someMethod) userInfo:nil repeats:(BOOL)];
@@ -38,7 +40,7 @@ NSTimer *timer = [NSTimer timerWithTimeInterval:(float) target:self selector:@se
 
 Some 
 
-##NSUserDefaults
+### NSUserDefaults
 
 *A programmatic interface for interacting with the defaults system.* You can store default objects of the following classes: *NSData, NSString, NSNumber, NSDate, NSArray or NSDictionary.* Any other types should be wrapped within an NSData object.
 
@@ -65,13 +67,13 @@ NSString *firstName = [defaults objectForKey:@"firstName"];
 NSString *lastName = [defaults objectForKey:@"lastName"];
 ```
 
-## AppDelegate
+### AppDelegate
 
 Access the shared Application Delegate instance.
 
 ```objc
 // Get shared instance of AppDelegate to access properties and methods
-AppDelegate *appDelegate = (AppDelegate*)[[UIApplication sharedApplication] delegate];
+AppDelegate *appDelegate = (AppDelegate*)[UIApplication sharedApplication].delegate;
 
 // If AppDelegate implements the method someMethod
 [appDelegate someMethod];
@@ -80,7 +82,7 @@ AppDelegate *appDelegate = (AppDelegate*)[[UIApplication sharedApplication] dele
 NSString *aString = [appDelegate aString];
 ```
 
-## NSLog
+### NSLog
 
 Logging on the console.
 
