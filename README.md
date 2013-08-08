@@ -94,6 +94,20 @@ NSLog(@"Hello World!");
 NSLog(@"My name is %@", @"Steve");
 ```
 
+### Touches
+
+For implementation in touchesBegan, touchesMoved, touchesEnded methods.
+
+```objc
+UITouch *touch = [touches anyObject];
+
+// Create a CGPoint (x, y) with touch position relative to a current view
+CGPoint touchPoint = [touch locationInView:self];
+
+// Get coordinate x
+CGFloat x = touchPoint.x;
+```
+
 ## Xcode Shortcuts
 
 A list of useful shortcuts to navigate the user interface of Xcode faster.
