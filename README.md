@@ -92,6 +92,9 @@ NSLog(@"Hello World!");
 
 // NSLog a formatted NSString
 NSLog(@"My name is %@", @"Steve");
+
+// NSLog formatted NSString depending on a boolean value
+NSLog(@"%@", isActive ? @"YES" : @"NO");
 ```
 
 ### Touches
