@@ -38,6 +38,12 @@ NSTimer *timer = [NSTimer timerWithTimeInterval:(float) target:self selector:@se
 
 *If someMethod takes arguments the selector name would be @selector(someMethod:)*
 
+```objc
+// Invalidate the timer (stop)
+[timer invalidate];
+timer = nil;
+```
+
 Some 
 
 ### NSUserDefaults
