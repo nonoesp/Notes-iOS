@@ -117,6 +117,21 @@ CGPoint touchPoint = [touch locationInView:self];
 CGFloat x = touchPoint.x;
 ```
 
+### Views
+
+#### ContentMode
+
+```objc
+// Create a UIImageView
+UIImageView *imageContainer = [[UIImageView alloc] initWithFrame:CGRectMake(0.0, 0.0, 100.0, 100.0)];
+
+// Set the image property
+UIImage *myImage = [UIImage imageNamed:@"image.png"];
+
+// Set the contentMode to fit the image; same result than CSS background-size:cover;
+imageContainer.contentMode = UIViewContentModeScaleAspectFit;
+```
+
 ## Xcode Shortcuts
 
 A list of useful shortcuts to navigate the user interface of Xcode faster.
