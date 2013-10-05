@@ -131,6 +131,15 @@ UIImage *myImage = [UIImage imageNamed:@"image.png"];
 // Set the contentMode to fit the image; same result than CSS background-size:cover;
 imageContainer.contentMode = UIViewContentModeScaleAspectFit;
 ```
+### Incrementing an int
+
+```objc
+// Define an int
+int age = 20;
+
+// Increase its value 2
+age += 2; // returns 22
+```
 
 ## Xcode Shortcuts
 
