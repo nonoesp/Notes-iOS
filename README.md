@@ -15,6 +15,7 @@ A personal guide with notes of Cocoa, iOs and Xcode.
 * [UnitsKit](https://github.com/stevemoser/UnitsKit)
 * [NoticeView](https://github.com/tciuro/NoticeView)
 * [DB5](https://github.com/quartermaster/DB5)
+* [BlocksKit](https://github.com/pandamonia/BlocksKit)
 
 ## Guide
 
