@@ -13,6 +13,8 @@ A personal guide with notes of Cocoa, iOs and Xcode.
 
 * [NYTimes Objective-C Style Guide](https://github.com/NYTimes/objective-c-style-guide)
 * [UnitsKit](https://github.com/stevemoser/UnitsKit)
+* [NoticeView](https://github.com/tciuro/NoticeView)
+* [DB5](https://github.com/quartermaster/DB5)
 
 ## Guide
 
