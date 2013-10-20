@@ -6,16 +6,24 @@ A personal guide with notes of Cocoa, iOs and Xcode.
 ## Table of Contents
 
 * References
+* Libraries
 * Guide
 * Xcode Shortcuts
 
 ## References
 
 * [NYTimes Objective-C Style Guide](https://github.com/NYTimes/objective-c-style-guide)
-* [UnitsKit](https://github.com/stevemoser/UnitsKit)
-* [NoticeView](https://github.com/tciuro/NoticeView)
-* [DB5](https://github.com/quartermaster/DB5)
-* [BlocksKit](https://github.com/pandamonia/BlocksKit)
+
+## Libraries
+
+*Useful libraries and their respective pods for [CocoaPods](http://cocoapods.org) if existent.*
+
+* [UnitsKit](https://github.com/stevemoser/UnitsKit) `pod 'UnitsKit', '~> 0.0.1'`
+* [NoticeView](https://github.com/tciuro/NoticeView) `pod 'NoticeView', '~> 3.0.7'`
+* [DB5](https://github.com/quartermaster/DB5) `pod 'DB5', '~> 0.0.1'`
+* [BlocksKit](https://github.com/pandamonia/BlocksKit) `pod 'BlocksKit', '~> 1.8.3'`
+* [MMMarkdown](https://github.com/mdiep/MMMarkdown) `pod 'MMMarkdown', '~> 0.2.3'`
+* [SSToolkit](https://github.com/soffes/sstoolkit) `pod 'SSToolkit', '~> 1.0.4'`
 
 ## Guide
 
