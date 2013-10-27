@@ -25,6 +25,8 @@ A personal guide with notes of Cocoa, iOs and Xcode.
 * [MMMarkdown](https://github.com/mdiep/MMMarkdown) `pod 'MMMarkdown', '~> 0.2.3'`
 * [SSToolkit](https://github.com/soffes/sstoolkit) `pod 'SSToolkit', '~> 1.0.4'`
 
+*podfile :ios, '7.0'
+
 ## Guide
 
 ### Status Bar
