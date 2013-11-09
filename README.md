@@ -24,6 +24,7 @@ A personal guide with notes of Cocoa, iOs and Xcode.
 * [BlocksKit](https://github.com/pandamonia/BlocksKit) `pod 'BlocksKit', '~> 1.8.3'`
 * [MMMarkdown](https://github.com/mdiep/MMMarkdown) `pod 'MMMarkdown', '~> 0.2.3'`
 * [SSToolkit](https://github.com/soffes/sstoolkit) `pod 'SSToolkit', '~> 1.0.4'`
+* TestFlightSDK `pod 'TestFlightSDK', '~> 2.0.1'` (need to manually download and drag libTestFlight.a to its Pod's target Build Phases > )
 
 *platform :ios, '7.0'
 
