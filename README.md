@@ -155,6 +155,25 @@ int age = 20;
 age += 2; // returns 22
 ```
 
+### Save and load an image
+```objc
+- (IBAction)saveImage:(UIImage*)image {
+    NSArray *paths = NSSearchPathForDirectoriesInDomains(NSDocumentDirectory, NSUserDomainMask, YES);
+    NSString *documentsDirectory = [paths objectAtIndex:0];
+    NSString *savedImagePath = [documentsDirectory stringByAppendingPathComponent:@"savedImage.png"];
+    NSData *imageData = UIImagePNGRepresentation(image);
+    [imageData writeToFile:savedImagePath atomically:NO];
+}
+
+- (UIImage*)getImageWithName:(NSString*)imageName {
+    NSArray *paths = NSSearchPathForDirectoriesInDomains(NSDocumentDirectory, NSUserDomainMask, YES);
+    NSString *documentsDirectory = [paths objectAtIndex:0];
+    NSString *getImagePath = [documentsDirectory stringByAppendingPathComponent:imageName];
+    UIImage *img = [UIImage imageWithContentsOfFile:getImagePath];
+    return img;
+}
+```
+
 ## Xcode Shortcuts
 
 A list of useful shortcuts to navigate the user interface of Xcode faster.
@@ -168,6 +187,3 @@ A list of useful shortcuts to navigate the user interface of Xcode faster.
 * `CMD + 0` Show/hide the File Inspector.
 
 * `CMD + SHIFT + 2` Organizer
-
-
-
