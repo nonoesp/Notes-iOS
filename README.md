@@ -188,5 +188,3 @@ A list of useful shortcuts to navigate the user interface of Xcode faster.
 * `CMD + 0` Show/hide the File Inspector.
 
 * `CMD + SHIFT + 2` Organizer
-
-Update.
