@@ -175,6 +175,21 @@ age += 2; // returns 22
 }
 ```
 
+### Display Markdown Text from file
+Requires MMMardown library loaded
+```objc
+NSString *markdown = [NSString stringWithContentsOfFile:[[NSBundle mainBundle] pathForResource:@"MyMarkdownFile" ofType:@"md"]  encoding:NSUTF8StringEncoding error:nil];
+NSString *html = [MMMarkdown HTMLStringWithMarkdown:markdown error:nil];
+NSDictionary *options = @{NSDocumentTypeDocumentAttribute: NSHTMLTextDocumentType};
+        
+NSError *error;
+NSAttributedString *preview = [[NSAttributedString alloc] initWithData:[html dataUsingEncoding:NSUTF8StringEncoding] options:options documentAttributes:nil error:&error];
+
+UITextView *liveView = [[UITextView alloc] init];
+liveView.attributedText = preview;
+```
+
+
 ## Xcode Shortcuts
 
 A list of useful shortcuts to navigate the user interface of Xcode faster.
