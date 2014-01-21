@@ -189,6 +189,27 @@ UITextView *liveView = [[UITextView alloc] init];
 liveView.attributedText = preview;
 ```
 
+### Capture An Image From A UIView
+
+```objc
+- (UIImage *)captureScreenInRect:(CGRect)captureFrame {
+    CALayer *layer;
+    layer = self.view.layer;
+    UIGraphicsBeginImageContext(self.view.bounds.size);
+    CGContextClipToRect (UIGraphicsGetCurrentContext(),captureFrame);
+    [layer renderInContext:UIGraphicsGetCurrentContext()];
+    UIImage *screenImage = UIGraphicsGetImageFromCurrentImageContext();
+    UIGraphicsEndImageContext();
+    return screenImage;
+}
+// source: http://bit.ly/1ebnWo0
+```
+
+After getting the UIImage, the image can be saved to the Camera Roll. The following code automatically asks the user to access the Photo Library and save.
+
+```objc
+UIImageWriteToSavedPhotosAlbum([self captureScreenInRect:CGRectMake(0, 0, self.view.frame.size.width, self.view.frame.size.height)], nil, nil, nil);
+```
 
 ## Xcode Shortcuts
 
