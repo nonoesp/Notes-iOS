@@ -211,6 +211,35 @@ After getting the UIImage, the image can be saved to the Camera Roll. The follow
 UIImageWriteToSavedPhotosAlbum([self captureScreenInRect:CGRectMake(0, 0, self.view.frame.size.width, self.view.frame.size.height)], nil, nil, nil);
 ```
 
+### Find Files From Documents Folder
+```objc
+-(NSArray *)findFilesWithExtension:(NSString *)extension{
+    
+    NSMutableArray *matches = [[NSMutableArray alloc]init];
+    NSFileManager *fManager = [NSFileManager defaultManager];
+    NSString *item;
+    NSArray *contents = [fManager contentsOfDirectoryAtPath:[NSHomeDirectory() stringByAppendingPathComponent:@"Documents"] error:nil];
+    
+    for (item in contents){
+        if ([[item pathExtension] isEqualToString:extension]) {
+            [matches addObject:item];
+        }
+    }
+    return matches;
+}
+```
+
+### Get An UIImage From Documents Folder With A Given Name
+```objc
+-(UIImage*)imageWithName:(NSString*)imageName {
+    NSArray *paths = NSSearchPathForDirectoriesInDomains(NSDocumentDirectory, NSUserDomainMask, YES);
+    NSString *filePath = [[paths objectAtIndex:0] stringByAppendingPathComponent:imageName];
+    UIImage *image = [[UIImage alloc] initWithContentsOfFile:filePath];
+    return image;
+}
+```
+
+
 ## Xcode Shortcuts
 
 A list of useful shortcuts to navigate the user interface of Xcode faster.
