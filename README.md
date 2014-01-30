@@ -205,10 +205,26 @@ liveView.attributedText = preview;
 // source: http://bit.ly/1ebnWo0
 ```
 
+### Saving UIImage(s) to the Saved Photos Album
+
 After getting the UIImage, the image can be saved to the Camera Roll. The following code automatically asks the user to access the Photo Library and save.
 
 ```objc
 UIImageWriteToSavedPhotosAlbum([self captureScreenInRect:CGRectMake(0, 0, self.view.frame.size.width, self.view.frame.size.height)], nil, nil, nil);
+```
+
+We can also fill the second and third parameters *–id completionTarget and SEL completionSelector.* This, will perform an action whenever the image has finished saving, as the function is asynchronous.
+
+```objc
+UIImageWriteToSavedPhotosAlbum(myImage, self, @selector(image:didFinishSavingWithError:contextInfo:), nil);
+```
+
+Then, we can implement that method:
+
+```objc
+- (void) image: (UIImage *) image didFinishSavingWithError: (NSError *) error contextInfo: (void *) contextInfo {
+NSLog(@"The image was saved to the Photo Album.");
+}
 ```
 
 ### Find Files From Documents Folder
