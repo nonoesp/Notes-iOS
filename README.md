@@ -177,6 +177,7 @@ age += 2; // returns 22
 
 ### Display Markdown Text from file
 Requires MMMardown library loaded
+
 ```objc
 NSString *markdown = [NSString stringWithContentsOfFile:[[NSBundle mainBundle] pathForResource:@"MyMarkdownFile" ofType:@"md"]  encoding:NSUTF8StringEncoding error:nil];
 NSString *html = [MMMarkdown HTMLStringWithMarkdown:markdown error:nil];
