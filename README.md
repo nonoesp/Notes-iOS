@@ -255,7 +255,14 @@ NSLog(@"The image was saved to the Photo Album.");
     return image;
 }
 ```
+### Encode Strings With base64
 
+```objc
+NSString *string = @"mySecretString";
+NSString *base64EncodedString = [[string dataUsingEncoding:NSUTF8StringEncoding] base64EncodedStringWithOptions:0];
+
+NSLog(@"%@", base64EncodedString); // bXlTZWNyZXRTdHJpbmc=
+```
 
 ## Xcode Shortcuts
 
