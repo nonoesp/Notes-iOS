@@ -118,6 +118,12 @@ NSLog(@"My name is %@", @"Steve");
 NSLog(@"%@", isActive ? @"YES" : @"NO");
 ```
 
+### Formatting Numbers
+
+```objc
+NSString *time = [NSString stringWithFormat:@"%02i:%02i", hours, minutes];
+```
+
 ### Touches
 
 For implementation in touchesBegan, touchesMoved, touchesEnded methods.
