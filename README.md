@@ -18,6 +18,7 @@ A personal guide with notes of Cocoa, iOs and Xcode.
 
 *Useful libraries and their respective pods for [CocoaPods](http://cocoapods.org) if existent.*
 
+* [AFNetworking](https://github.com/AFNetworking/AFNetworking) `pod 'AFNetworking', '~> 2.2.0'`
 * [UnitsKit](https://github.com/stevemoser/UnitsKit) `pod 'UnitsKit', '~> 0.0.1'`
 * [NoticeView](https://github.com/tciuro/NoticeView) `pod 'NoticeView', '~> 3.0.7'`
 * [DB5](https://github.com/quartermaster/DB5) `pod 'DB5', '~> 0.0.1'`
@@ -26,6 +27,7 @@ A personal guide with notes of Cocoa, iOs and Xcode.
 * [SSToolkit](https://github.com/soffes/sstoolkit) `pod 'SSToolkit', '~> 1.0.4'`
 * TestFlightSDK `pod 'TestFlightSDK', '~> 2.0.1'` (need to manually download and drag libTestFlight.a to its Pod's target Build Phases > )
 * [IonIcons](https://github.com/TapTemplate/ionicons-iOS) `pod 'ionicons'`
+* [FLKAytoLayout](https://github.com/dkduck/FLKAutoLayout) `pod 'FLKAutoLayout', '~> 0.1.1'`
 
 *platform :ios, '7.0'
 
