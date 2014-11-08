@@ -111,6 +111,7 @@ NSString *aString = [appDelegate aString];
 
 Logging on the console.
 
+Objective-C
 ```objc
 // NSLog an NSString
 NSLog(@"Hello, World!");
@@ -121,6 +122,8 @@ NSLog(@"My name is %@", @"Steve");
 // NSLog formatted NSString depending on a boolean value
 NSLog(@"%@", isActive ? @"YES" : @"NO");
 ```
+
+Swift
 
 ```swift
 // println String
