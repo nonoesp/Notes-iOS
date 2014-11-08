@@ -3,6 +3,8 @@ iOS-Notes
 
 A personal guide with notes of Cocoa, iOs and Xcode.
 
+Code snippets appear in both Swift and Objective-C.
+
 ## Table of Contents
 
 * References
@@ -111,13 +113,18 @@ Logging on the console.
 
 ```objc
 // NSLog an NSString
-NSLog(@"Hello World!");
+NSLog(@"Hello, World!");
 
 // NSLog a formatted NSString
 NSLog(@"My name is %@", @"Steve");
 
 // NSLog formatted NSString depending on a boolean value
 NSLog(@"%@", isActive ? @"YES" : @"NO");
+```
+
+```swift
+// println String
+println("Hello, World")
 ```
 
 ### Formatting Numbers
