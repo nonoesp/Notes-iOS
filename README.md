@@ -1,4 +1,4 @@
-leariOS-Notes
+Notes-iOS
 =========
 
 A personal guide with notes of Cocoa, iOs and Xcode.
