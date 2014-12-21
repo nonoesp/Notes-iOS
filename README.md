@@ -1,4 +1,4 @@
-iOS-Notes
+leariOS-Notes
 =========
 
 A personal guide with notes of Cocoa, iOs and Xcode.
@@ -280,6 +280,19 @@ NSString *string = @"mySecretString";
 NSString *base64EncodedString = [[string dataUsingEncoding:NSUTF8StringEncoding] base64EncodedStringWithOptions:0];
 
 NSLog(@"%@", base64EncodedString); // bXlTZWNyZXRTdHJpbmc=
+```
+
+### Force UIWebView to Open Links with Safari
+
+```objc
+-(BOOL) webView:(UIWebView *)inWeb shouldStartLoadWithRequest:(NSURLRequest *)inRequest navigationType:(UIWebViewNavigationType)inType {
+    if ( inType == UIWebViewNavigationTypeLinkClicked ) {
+        [[UIApplication sharedApplication] openURL:[inRequest URL]];
+        return NO;
+    }
+    
+    return YES;
+}
 ```
 
 ## Xcode Shortcuts
