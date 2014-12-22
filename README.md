@@ -31,7 +31,7 @@ Code snippets appear in both Swift and Objective-C.
 * [IonIcons](https://github.com/TapTemplate/ionicons-iOS) `pod 'ionicons'`
 * [FLKAytoLayout](https://github.com/dkduck/FLKAutoLayout) `pod 'FLKAutoLayout', '~> 0.1.1'`
 
-*platform :ios, '7.0'
+*platform :ios, '8.1'
 
 ## Guide
 
