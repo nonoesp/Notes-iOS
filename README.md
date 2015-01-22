@@ -314,6 +314,8 @@ A list of useful shortcuts to navigate the user interface of Xcode faster.
 
 Some errors I found on my way, and somehow managed to solve—because they will happen again in the future.
 
-### Cocoapods throws 'OBJC_LDFLAGS' after running 'pod update'
+### CocoaPods 'OBJC_LDFLAGS'
+
+After running 'pod update,' CocoaPods suggest that *Other Linker Flags* has some invalid values.
 
 Removed extra *Library Search Paths* in Build Settings and left only $(inherited).
