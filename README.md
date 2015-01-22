@@ -11,6 +11,7 @@ Code snippets appear in both Swift and Objective-C.
 * Libraries
 * Guide
 * Xcode Shortcuts
+* Errors
 
 ## References
 
@@ -308,3 +309,11 @@ A list of useful shortcuts to navigate the user interface of Xcode faster.
 * `CMD + 0` Show/hide the File Inspector.
 
 * `CMD + SHIFT + 2` Organizer
+
+## Errors
+
+Some errors I found on my way, and somehow managed to solve—because they will happen again in the future.
+
+### Cocoapods throws 'OBJC_LDFLAGS' after running 'pod update'
+
+Removed extra *Library Search Paths* in Build Settings and left only $(inherited).
