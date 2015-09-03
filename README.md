@@ -135,9 +135,11 @@ println("Hello, World")
 NSString *time = [NSString stringWithFormat:@"%02i:%02i", hours, minutes];
 ```
 
-### Ies
+### Touches
 
 For implementation in touchesBegan, touchesMoved, touchesEnded methods.
+
+Objective-C
 
 ```objc
 UITouch *touch = [touches anyObject];
@@ -148,6 +150,8 @@ CGPoint touchPoint = [touch locationInView:self];
 // Get coordinate x
 CGFloat x = touchPoint.x;
 ```
+
+Swift
 
 ```swift
 // Get the CGPoint using Swift
