@@ -147,7 +147,7 @@ Objective-C
 UITouch *touch = [touches anyObject];
 
 // Create a CGPoint (x, y) with touch position relative to a current view
-CGPoint touchPoint = [touch locationInView:self];
+CGPoint touchPoint = [touch locationInView:self.view];
 
 // Get coordinate x
 CGFloat x = touchPoint.x;
