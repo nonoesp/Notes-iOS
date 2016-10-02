@@ -18,6 +18,7 @@ Code snippets appear in both Swift and Objective-C.
 
 * [NYTimes Objective-C Style Guide](https://github.com/NYTimes/objective-c-style-guide)
 * [Advances in OpenGL ES 3.0](https://developer.apple.com/videos/play/techtalks-ios-7/10/) (Apple iOS 7 Tech Talks)
+* [UIGestureRecognizer](https://developer.apple.com/reference/uikit/uigesturerecognizer)
 
 ## Libraries
 
