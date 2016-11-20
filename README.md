@@ -35,7 +35,11 @@ Code snippets appear in both Swift and Objective-C.
 * [IonIcons](https://github.com/TapTemplate/ionicons-iOS) `pod 'ionicons'`
 * [FLKAytoLayout](https://github.com/dkduck/FLKAutoLayout) `pod 'FLKAutoLayout', '~> 0.1.1'`
 
-*platform :ios, '8.2'
+\*platform :ios, '8.2'
+
+## Resources
+
+* [Pttrns](http://pttrns.com/) (Mobile Design Patterns)
 
 ## Guide
 
@@ -215,7 +219,7 @@ Requires MMMardown library loaded
 NSString *markdown = [NSString stringWithContentsOfFile:[[NSBundle mainBundle] pathForResource:@"MyMarkdownFile" ofType:@"md"]  encoding:NSUTF8StringEncoding error:nil];
 NSString *html = [MMMarkdown HTMLStringWithMarkdown:markdown error:nil];
 NSDictionary *options = @{NSDocumentTypeDocumentAttribute: NSHTMLTextDocumentType};
-        
+
 NSError *error;
 NSAttributedString *preview = [[NSAttributedString alloc] initWithData:[html dataUsingEncoding:NSUTF8StringEncoding] options:options documentAttributes:nil error:&error];
 
@@ -264,12 +268,12 @@ NSLog(@"The image was saved to the Photo Album.");
 ### Find Files From Documents Folder
 ```objc
 -(NSArray *)findFilesWithExtension:(NSString *)extension{
-    
+
     NSMutableArray *matches = [[NSMutableArray alloc]init];
     NSFileManager *fManager = [NSFileManager defaultManager];
     NSString *item;
     NSArray *contents = [fManager contentsOfDirectoryAtPath:[NSHomeDirectory() stringByAppendingPathComponent:@"Documents"] error:nil];
-    
+
     for (item in contents){
         if ([[item pathExtension] isEqualToString:extension]) {
             [matches addObject:item];
@@ -305,7 +309,7 @@ NSLog(@"%@", base64EncodedString); // bXlTZWNyZXRTdHJpbmc=
         [[UIApplication sharedApplication] openURL:[inRequest URL]];
         return NO;
     }
-    
+
     return YES;
 }
 ```
