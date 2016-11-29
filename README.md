@@ -71,6 +71,19 @@ NSTimer *timer = [NSTimer timerWithTimeInterval:(float) target:self selector:@se
 timer = nil;
 ```
 
+### Sets
+
+```objc
+// Create an inmutable set
+NSSet * aSet = [[NSSet alloc] init];
+// Create a mutable set (objects can be added to it)
+NSMutableSet * mySet = [[NSMutableSet alloc] init];
+// Add an item
+[mySet addObject:@"Hello World"];
+// Check if an object exists in a set
+bool exists = [mySet member:@"Hellow Wolrd"]; // returns YES
+```
+
 ### NSUserDefaults
 
 *A programmatic interface for interacting with the defaults system.* You can store default objects of the following classes: *NSData, NSString, NSNumber, NSDate, NSArray or NSDictionary.* Any other types should be wrapped within an NSData object.
