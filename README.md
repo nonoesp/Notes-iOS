@@ -314,14 +314,6 @@ NSString *base64EncodedString = [[string dataUsingEncoding:NSUTF8StringEncoding]
 NSLog(@"%@", base64EncodedString); // bXlTZWNyZXRTdHJpbmc=
 ```
 
-### Formatted String
-
-Swift
-
-```swift
-let aString = String(format: "My name is %@, PI starts with %i. "Peter", 3.14)
-```
-
 ### Force UIWebView to Open Links with Safari
 
 ```objc
